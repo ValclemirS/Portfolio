@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header .photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.header .title{
+    text-align: center;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-repeat:no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+
+}
+.information .profile::before{
+    background:url('/assets/img/icons/profile.svg') ;
+}
+.information .location::before{
+    background:url('/assets/img/icons/direction_navigation_maps_location_pin_icon_259558.svg') ;
+}
+.information .phone::before{
+    background:url('/assets/img/icons/communication_calling_phone_call_icon_259542.svg') ;
+}
+.information .email::before{
+    background:url('/assets/img/icons/communication_mail_envelope_email_message_icon_259541.svg') ;
+}
+.information .linkedin::before{
+    background:url('/assets/img/icons/linkedin_icon-icons.com_65929.svg') ;
+
+}
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information";
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin-left: 170px;
+        margin-right: 20px;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}

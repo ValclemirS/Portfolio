@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body{
+     background:#610505;
+     color: aliceblue;
+  }
+.content{
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background: rgb(150, 34, 34);
+}
+.header{
+     background: rgb(150, 34, 34);
+}
+.title{
+     background: rgb(150, 34, 34);
+}
+.information p{
+     background: rgb(150, 34, 34);
+}
+.information {
+     background: rgb(150, 34, 34);
+  
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}

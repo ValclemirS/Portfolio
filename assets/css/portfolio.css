@@ -1,0 +1,36 @@
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.portfolio li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:  1rem 0rem;
+}
+.portfolio .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(123, 79, 165);
+    font-size: 1.250rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+
+}
+.portfolio .title.github::before{
+    content: '';
+    display: inline-block;
+    margin-right: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background:url('/assets/img/icons/github_git_hub_logo_icon_132878.svg');
+}

@@ -1,0 +1,63 @@
+.arcodeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: 0.25s;
+}
+.arcodeon.open,.arcodeon:hover{
+    background-color: rgb(123, 79, 165);
+    border: rgb(123, 79, 165);
+}
+
+.arcodeon .content_arcodeon{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out ;
+}
+.arcodeon.open .content_arcodeon{
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+    padding: 0rem 1rem 1rem 2rem ;
+}
+.arcodeon .trigger{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: aliceblue;
+    border: none;
+    
+}
+.arcodeon .trigger{
+    cursor: pointer;
+}
+.arcodeon .trigger::after{
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background:url('/assets/img/icons/cirle_right_arrow_direction_icon_259750.svg') ;
+    transform: rotate(90deg);
+    transition: 0.35s;
+
+}
+.arcodeon.open .trigger::after{
+    transform: rotate(270deg);
+
+}
+.arcodeon .trigger h2{
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: start;
+
+}

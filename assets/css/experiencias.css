@@ -1,0 +1,42 @@
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.experiencias .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(123, 79, 165);
+    font-size: 1.250rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+
+}
+.experiencias li{
+    margin-bottom: 1rem;
+}
+.experiencias li .periodo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.experiencias li .periodo::before{
+    content: '';
+    display: inline-block;
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background:url('/assets/img/icons/clock_hour_minute_second_time_timer_watch_icon_123193.svg');
+}
+
+.experiencias p {
+    word-wrap: break-word;
+      max-width: 100%;
+}
