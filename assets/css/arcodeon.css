@@ -46,7 +46,7 @@
     height: 2rem;
     background-repeat:no-repeat;
     background-size: contain;
-    background:url('/assets/img/icons/cirle_right_arrow_direction_icon_259750.svg') ;
+    background:url('assets/img/icons/cirle_right_arrow_direction_icon_259750.svg') ;
     transform: rotate(90deg);
     transition: 0.35s;
 

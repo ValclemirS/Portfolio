@@ -37,19 +37,19 @@
 
 }
 .information .profile::before{
-    background:url('/assets/img/icons/profile.svg') ;
+    background:url('assets/img/icons/profile.svg') ;
 }
 .information .location::before{
-    background:url('/assets/img/icons/direction_navigation_maps_location_pin_icon_259558.svg') ;
+    background:url('assets/img/icons/direction_navigation_maps_location_pin_icon_259558.svg') ;
 }
 .information .phone::before{
-    background:url('/assets/img/icons/communication_calling_phone_call_icon_259542.svg') ;
+    background:url('assets/img/icons/communication_calling_phone_call_icon_259542.svg') ;
 }
 .information .email::before{
-    background:url('/assets/img/icons/communication_mail_envelope_email_message_icon_259541.svg') ;
+    background:url('assets/img/icons/communication_mail_envelope_email_message_icon_259541.svg') ;
 }
 .information .linkedin::before{
-    background:url('/assets/img/icons/linkedin_icon-icons.com_65929.svg') ;
+    background:url('assets/img/icons/linkedin_icon-icons.com_65929.svg') ;
 
 }
 @media only screen and (min-width: 768px) {
