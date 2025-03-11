@@ -1,63 +1,67 @@
-.arcodeon{
+.arcodeon {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid #fff;
-    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     margin: 1rem 0;
-    transition: 0.25s;
-}
-.arcodeon.open,.arcodeon:hover{
-    background-color: rgb(123, 79, 165);
-    border: rgb(123, 79, 165);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background: rgba(123, 79, 165, 0.1);
 }
 
-.arcodeon .content_arcodeon{
+.arcodeon.open, .arcodeon:hover {
+    background-color: rgba(123, 79, 165, 0.3);
+    border-color: rgba(123, 79, 165, 0.5);
+}
+
+.arcodeon .content_arcodeon {
     overflow: hidden;
     height: 0;
     opacity: 0;
-    transition: opacity 0.35s ease-in-out ;
+    transition: opacity 0.35s ease-in-out, height 0.35s ease-in-out;
 }
-.arcodeon.open .content_arcodeon{
-    display: inline-block;
+
+.arcodeon.open .content_arcodeon {
     height: auto;
     opacity: 1;
-    padding: 0rem 1rem 1rem 2rem ;
+    padding: 1rem 2rem;
 }
-.arcodeon .trigger{
+
+.arcodeon .trigger {
     display: flex;
-    flex-direction:row;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 1rem 2rem;
     background: transparent;
-    color: aliceblue;
+    color: #f0f0f0;
     border: none;
-    
-}
-.arcodeon .trigger{
     cursor: pointer;
+    transition: color 0.3s ease;
 }
-.arcodeon .trigger::after{
+
+.arcodeon .trigger:hover {
+    color: #ff6f61;
+}
+
+.arcodeon .trigger::after {
     content: '';
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-repeat:no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('assets/img/icons/cirle_right_arrow_direction_icon_259750.svg') no-repeat center;
     background-size: contain;
-    background:url('assets/img/icons/cirle_right_arrow_direction_icon_259750.svg') ;
     transform: rotate(90deg);
-    transition: 0.35s;
-
+    transition: transform 0.35s ease;
 }
-.arcodeon.open .trigger::after{
+
+.arcodeon.open .trigger::after {
     transform: rotate(270deg);
-
 }
-.arcodeon .trigger h2{
-    font-size: 1.2rem;
+
+.arcodeon .trigger h2 {
+    font-size: 1.5rem;
     margin: 0;
     text-align: start;
-
 }

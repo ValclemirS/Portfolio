@@ -1,40 +1,65 @@
 .skills {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .skills .tecnologias ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.skills .tecnologias ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(123, 79, 165, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills .tecnologias ul li:hover {
+    background-color: rgba(123, 79, 165, 0.3);
+    transform: translateY(-5px);
+}
+
 .skills .tecnologias ul li img {
     max-width: 60px;
-    margin: 0.5rem;
-    
+    height: auto;
 }
+
 .skills .pessoais ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-.skills .pessoais ul  li{
-    margin-left: 2rem;
-    padding: 0.5rem;
+
+.skills .pessoais ul li {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(123, 79, 165, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.skills .pessoais ul li:hover {
+    background-color: rgba(123, 79, 165, 0.3);
+    transform: translateY(-5px);
+}
+
 @media only screen and (min-width: 768px) {
-   .skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }

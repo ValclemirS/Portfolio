@@ -1,5 +1,4 @@
-
-.portfolio{
+.portfolio {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,29 +7,41 @@
     padding: 0;
     list-style: none;
 }
-.portfolio li{
+
+.portfolio li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin:  1rem 0rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(123, 79, 165, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.portfolio li:hover {
+    background-color: rgba(123, 79, 165, 0.3);
+    transform: translateY(-5px);
+}
+
 .portfolio .title {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    background-color: rgb(123, 79, 165);
-    font-size: 1.250rem;
+    background-color: rgba(123, 79, 165, 0.3);
+    font-size: 1.25rem;
     font-weight: 800;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     margin-bottom: 0.5rem;
-
 }
-.portfolio .title.github::before{
+
+.portfolio .title.github::before {
     content: '';
     display: inline-block;
-    margin-right: 0.2rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat:no-repeat;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('assets/img/icons/github_git_hub_logo_icon_132878.svg') no-repeat center;
     background-size: contain;
-    background:url('assets/img/icons/github_git_hub_logo_icon_132878.svg');
 }
